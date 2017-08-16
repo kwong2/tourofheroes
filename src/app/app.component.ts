@@ -11,6 +11,12 @@ export class Hero {
   styleUrls: ['./app.component.css'],
   template: 
     `<h1>{{title}}</h1>
+    <h2> My Heroes </h2>
+    <ul class = "heroes">
+      <li *ngFor="let hero of heroes">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </li>
+    </ul>
     <h2>{{hero.name}} details!</h2>
     <div><label>id: </label>{{hero.id}}</div>
     <div><label>name: </label>
@@ -24,7 +30,10 @@ export class AppComponent {
     id: 1,
     name: 'Windstorm'
   };
+  heroes = HEROES;
 }
+
+
 
 const HEROES: Hero[] = [
   { id: 11, name: 'Ric Flair'},
@@ -38,3 +47,6 @@ const HEROES: Hero[] = [
   { id: 19, name: 'Mick Foley'},
   { id: 20, name: 'Big Bossman'}
 ];
+
+
+
