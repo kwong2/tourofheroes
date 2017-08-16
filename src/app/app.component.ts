@@ -25,3 +25,16 @@ export class AppComponent {
     name: 'Windstorm'
   };
 }
+
+const HEROES: Hero[] = [
+  { id: 11, name: 'Ric Flair'},
+  { id: 12, name: 'Hulk Hogan'},
+  { id: 13, name: 'The Rock'},
+  { id: 14, name: 'Stone Cold'},
+  { id: 15, name: 'Randy Savage'},
+  { id: 16, name: 'Ultimate Warrior'},
+  { id: 17, name: 'Dusty Rhodes'},
+  { id: 18, name: 'Triple H'},
+  { id: 19, name: 'Mick Foley'},
+  { id: 20, name: 'Big Bossman'}
+];
