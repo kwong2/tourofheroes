@@ -62,26 +62,25 @@ export class Hero {
     `<h1>{{title}}</h1>
     <h2> My Heroes </h2>
     <ul class = "heroes">
-      <li *ngFor="let hero of heroes">
+      <li *ngFor="let hero of heroes" (click)= "onSelect(hero)">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
       </li>
     </ul>
-    <h2>{{hero.name}} details!</h2>
-    <div><label>id: </label>{{hero.id}}</div>
+    <h2>{{selectedHero.name}} details!</h2>
+    <div><label>id: </label>{{selectedHero.id}}</div>
     <div><label>name: </label>
-    <input [(ngModel)]="hero.name" placeholder = "name">
+    <input [(ngModel)]="selectedHero.name" placeholder = "name">
     </div>`
 })
 
 export class AppComponent {
   title = 'Tour of Heroes';
-  hero: Hero = {
-    id: 1,
-    name: 'Windstorm'
-  };
   heroes = HEROES;
+  selectedHero: Hero;
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
 }
-
 
 
 const HEROES: Hero[] = [
