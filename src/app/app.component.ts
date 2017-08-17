@@ -88,6 +88,16 @@ export class AppComponent {
 
 
 const HEROES: Hero[] = [
+  { id: 1, name: 'The Undertaker'},
+  { id: 2, name: 'Andre The Giant'},
+  { id: 3, name: 'Earthquake'},
+  { id: 4, name: 'Rey Mysterio'},
+  { id: 5, name: 'Batista'},
+  { id: 6, name: 'Goldberg'},
+  { id: 7, name: 'Sgt.Slaughter'},
+  { id: 8, name: 'RVD'},
+  { id: 9, name: 'Iron Sheik'},
+  { id: 10, name: 'Kevin Nash'},
   { id: 11, name: 'Ric Flair'},
   { id: 12, name: 'Hulk Hogan'},
   { id: 13, name: 'The Rock'},
